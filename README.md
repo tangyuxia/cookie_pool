@@ -1,13 +1,14 @@
 # CookiesPool
 
 #### 介绍
-1. 一个简单的cookie池，对应网站是闪职，这个网站是专门的爬虫工程师练习网站.该项目全部是异步编程
-2. 用户名密码存入mongodb数据库中，cookie存入redis数据库中
-3. 使用了redis的发布订阅模式，cookie过期后会自动登录，如果cookie被手动删除后也会自动登录 
-4. 网站地址：http://shanzhi.spbeen.com/
-5. 登录需要用到js逆向，本项目是用PyExecJs库直接执行js代码
-6. 随机ua用的fake-useragent库
-7. 发生请求用的aiohttp库
+1. 一个简单的cookie池，对应网站是闪职，这个网站是专门的爬虫工程师练习网站.在这里感谢网站作者的贡献
+2. 该项目全部是异步编程
+3. 用户名密码存入mongodb数据库中，cookie存入redis数据库中
+4. 使用了redis的发布订阅模式，cookie过期后会自动登录，如果cookie被手动删除后也会自动登录 
+5. 网站地址：http://shanzhi.spbeen.com/
+6. 登录需要用到js逆向，本项目是用PyExecJs库直接执行js代码
+7. 随机ua用的fake-useragent库
+8. 发生请求用的aiohttp库
 
 ---
 
