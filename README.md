@@ -32,6 +32,10 @@ git clone git@gitee.com:snow-lotos/cookies-pool-c.git
 ```bash
 git clone git@github.com:tangyuxia/cookies_pool.git
 ```
+3. 安装依赖包,推荐创建虚拟环境安装
+``` bash
+pip3 install -r requirements.txt
+```
 
 ---
 
