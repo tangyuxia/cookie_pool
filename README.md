@@ -30,7 +30,7 @@ git clone git@gitee.com:snow-lotos/cookies-pool-c.git
 ```
 2. github地址
 ```bash
-
+git clone git@github.com:tangyuxia/cookies_pool.git
 ```
 
 ---
