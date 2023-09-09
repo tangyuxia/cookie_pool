@@ -12,7 +12,7 @@ from sanic.response import json
 
 
 def validate_input(func):
-    async def wrapper(request: Request):
+    async def wrapper(self,request: Request, *args, **kwargs):
         username = request.json.get("username")
         password = request.json.get("password")
 
@@ -24,7 +24,7 @@ def validate_input(func):
         if not re.match(r'^[a-zA-Z0-9]{8,16}$', password):
             return json({"code": 400, "message": "Invalid password"}, status=400)
 
-        return await func(request)
+        return await func(self,request, *args, **kwargs)
 
     return wrapper
 

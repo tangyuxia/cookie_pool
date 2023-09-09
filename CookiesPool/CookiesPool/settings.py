@@ -8,6 +8,11 @@ from CookiesPool.CookiesPool.config_json import UserJson
 
 BASEDIR = os.path.abspath(os.path.dirname(__file__))
 
+PWD_ENCORYPT_PATH = os.path.join(BASEDIR, "pwd_encrypt")
+JS_FILE_PATH = os.path.join(PWD_ENCORYPT_PATH, "js")
+# js文件的位置
+JS_FILE = os.path.join(JS_FILE_PATH, "jsencrypt_min.js")
+
 JSON_PATH = os.path.join(BASEDIR, 'UserPwd.json')
 
 # 转发秘钥，比如nginx就需要
@@ -52,5 +57,5 @@ MONGO_CONFIG = {
 USER_JSON_: dict = UserJson().user_json
 
 if __name__ == '__main__':
-    print(BASEDIR)
-    print(USER_JSON_)
+    # print(BASEDIR)
+    print(JS_FILE)

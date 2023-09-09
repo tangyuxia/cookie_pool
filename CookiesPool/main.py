@@ -16,5 +16,5 @@ def run():
 
 if __name__ == '__main__':
     # single_process 单线程运行
-    # app.run(host='127.0.0.1', port=8888, single_process=True,debug=True)
+    # app.run(host='127.0.0.1', port=8887, single_process=True,debug=True)
     run()

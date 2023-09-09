@@ -13,13 +13,15 @@ from functools import partial
 subprocess.Popen = partial(subprocess.Popen, encoding='utf-8')
 import execjs
 
+from CookiesPool.CookiesPool.settings import JS_FILE
+
 
 class EncryptPassword:
     def __init__(self):
         pass
 
     async def _open_file(self):
-        async with aiofiles.open('../pwd_encrypt/js/jsencrypt_min.js', 'r', encoding='utf-8') as f:
+        async with aiofiles.open(JS_FILE, 'r', encoding='utf-8') as f:
             return await f.read()
 
     async def encrypt_password(self, password: str) -> dict:
